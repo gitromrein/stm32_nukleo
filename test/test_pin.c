@@ -45,9 +45,9 @@ int main()
   for (unsigned int i = 0; i < 5; i++)
   {
     RUN_TEST(test_led_state_high);
-    HAL_Delay(500);
+    HAL_Delay(2000);
     RUN_TEST(test_led_state_low);
-    HAL_Delay(500);
+    HAL_Delay(2000);
   }
 
   UNITY_END(); // stop unit testing
