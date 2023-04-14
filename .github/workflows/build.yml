@@ -41,7 +41,7 @@ jobs:
         run: pio check -e nucleo_f446re
 
   units_tests:
-    name: run native units test
+    name: run embedded units test STM32 Nukleo
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
