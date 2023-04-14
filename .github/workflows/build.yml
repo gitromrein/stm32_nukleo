@@ -51,7 +51,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install platformio
-      - name: Run tests on the embedded target
+      - name: Run tests on the embedded target STM32
         env:
           PLATFORMIO_AUTH_TOKEN: ${{ secrets.PLATFORMIO_AUTH_TOKEN }}
         run: platformio remote test -e nucleo_f446re -v    
